@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scrollbar-color: var(--bgthemecolor2) var(--bgtrans);
+  scrollbar-width: thin;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 15360px) {
+  .big-screen {
+    display: block;
+  }
+  .note-small {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
+  .big-screen {
+    display: none;
+  }
+  .note-small {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0 2%;
+  }
+  .note-small button {
+    display: inline-flex;
+    margin-top: 50px;
+    width: 175px;
+    background: transparent;
+    color: #ff8833;
+    padding: 2% 4%;
+    border-radius: 50px;
+    outline: 2px solid transparent;
+    outline-offset: 0;
+    border: 1px solid #ff8833;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .note-small button:hover {
+    color: black;
+    background: #ff8833;
+    outline: 2px solid white;
+    outline-offset: 2px;
+  }
+
+  .note-small button svg {
+    width: 20px;
+    margin-left: 18px;
+  }
+
+  #root {
+    background: #212121;
+    height: 100vh;
+  }
+}

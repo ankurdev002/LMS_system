@@ -1,0 +1,505 @@
+.date-journal-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.date-journal-content {
+  display: flex;
+  padding-left: 4%;
+  padding-right: 4%;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  gap: 2%;
+}
+
+.date-journal-content .navigations-back {
+  padding-top: 2%;
+}
+
+.date-journal-content .navigations-back button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bgtrans);
+  color: var(--bgwhite);
+  border: 0;
+  outline: 0;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.date-journal-content .navigations-back button:hover {
+  color: var(--bgthemecolor2);
+  text-decoration: underline;
+}
+
+.date-journal-content .main-calender-container-datejournal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  z-index: 10;
+  height: 100%;
+  /* overflow-y: hidden; */
+  gap: 4%;
+  overflow: hidden;
+}
+
+.main-calender-container-datejournal .calendar-journal-container {
+  width: 65%;
+  text-align: center;
+  height: 100%;
+  background: linear-gradient(120deg, #838383b2, #2c2c2ca1, #858585b2),
+    url(/src/Assets/Images/cal.jpg);
+  background-size: cover;
+  background-position: top;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.main-calender-container-datejournal .month-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+  height: 15%;
+  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main-calender-container-datejournal .month-nav button {
+  background-color: var(--bgColor2);
+  border-radius: 50%;
+  color: var(--bgwhite);
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.main-calender-container-datejournal .month-nav h1 {
+  font-size: 75%;
+  color: white;
+  text-transform: uppercase;
+}
+.main-calender-container-datejournal .weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  font-size: 75%;
+  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  border: 0;
+  height: 10%;
+  place-items: center;
+}
+
+.main-calender-container-datejournal .weekday {
+  text-transform: uppercase;
+  padding: 0;
+  text-align: center;
+  color: var(--bgwhite);
+  font-weight: 700;
+}
+
+.main-calender-container-datejournal .calendar-journal {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  font-size: 75%;
+  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  height: 75%;
+  place-items: center;
+}
+
+.main-calender-container-datejournal .day {
+  background-color: var(--bgtrans);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.day.sunday {
+  color: var(--bgchanges) !important;
+  box-shadow: 0 0 5px 5px var(--bgchanges) inset, 0 0 5px 5px var(--bgchanges) !important;
+}
+
+.main-calender-container-datejournal .day.other-month {
+  box-shadow: 0 0 5px 5px grey inset, 0 0 5px 5px grey;
+  color: var(--bgGreyLight);
+}
+
+.second-date-journal-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  width: 30%;
+}
+
+.second-date-journal-container .calendar-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 30%;
+}
+
+.second-date-journal-container .calendar-summary .summary-content {
+  height: 100%;
+  width: 100%;
+}
+.summary-table {
+  height: 100%;
+  padding: 4%;
+  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  background: var(--bgColor);
+  border-radius: 15px;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  .heading-summary
+  h1 {
+  font-size: 70%;
+  color: var(--bgwhite);
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 10%;
+}
+
+.second-date-journal-container .calendar-summary .summary-content table {
+  width: 100%;
+  border-collapse: collapse;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.second-date-journal-container .calendar-summary .summary-content table thead {
+  width: 100%;
+  height: 15%;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  thead
+  tr {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  thead
+  tr
+  th {
+  color: var(--bgwhite);
+  font-weight: 500;
+  font-size: 75%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  thead
+  tr
+  th:nth-child(1) {
+  width: 10%;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  thead
+  tr
+  th:nth-child(2) {
+  width: 50%;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  thead
+  tr
+  th:nth-child(3) {
+  width: 35%;
+}
+
+.second-date-journal-container .calendar-summary .summary-content table tbody {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  tbody
+  tr {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+}
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  tbody
+  tr
+  td {
+  color: var(--bgwhite);
+  font-weight: 500;
+  font-size: 75%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  tbody
+  tr
+  td:nth-child(1) {
+  width: 10%;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  tbody
+  tr
+  td:nth-child(2) {
+  width: 50%;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  tbody
+  tr
+  td:nth-child(3) {
+  width: 35%;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  tbody
+  tr:nth-child(1)
+  td:nth-child(2) {
+  width: 50%;
+  background-color: var(--bgcompleted);
+  border-radius: 50px;
+  height: 10px;
+  display: block;
+  align-self: center;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  tbody
+  tr:nth-child(2)
+  td:nth-child(2) {
+  width: 50%;
+  background-color: var(--bgchanges);
+  border-radius: 50px;
+  height: 10px;
+  display: block;
+  align-self: center;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  tbody
+  tr:nth-child(3)
+  td:nth-child(2) {
+  width: 50%;
+  background-color: var(--bgleave);
+  border-radius: 50px;
+  height: 10px;
+  display: block;
+  align-self: center;
+}
+
+.second-date-journal-container
+  .calendar-summary
+  .summary-content
+  table
+  tbody
+  tr:nth-child(4)
+  td:nth-child(2) {
+  width: 50%;
+  background-color: var(--bgtodo);
+  border-radius: 50px;
+  height: 10px;
+  display: block;
+  align-self: center;
+}
+.second-date-journal-container .leave-status-summary {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4%;
+}
+
+.second-date-journal-container .leave-status-summary .leaves-taken {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background: var(--bgColor);
+  padding: 1% 0;
+  border-radius: 10px;
+  height: 20%;
+}
+.second-date-journal-container .leave-status-summary .leaves-taken h3 {
+  color: var(--bgthemecolor2);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 75%;
+}
+.second-date-journal-container .emp-leave {
+  display: flex;
+  justify-content: space-evenly;
+  height: 75%;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  background: var(--bgColor);
+  padding: 2% 0;
+}
+
+.second-date-journal-container .emp-leave .paid-leave,
+.second-date-journal-container .emp-leave .unpaid-leave {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+
+.second-date-journal-container .emp-leave .paid-leave .leave-type,
+.second-date-journal-container .emp-leave .unpaid-leave .leave-type {
+  height: 20%;
+  color: var(--bgthemecolor2);
+  text-transform: uppercase;
+  font-size: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.second-date-journal-container .emp-leave .paid-leave .leave-numeric,
+.second-date-journal-container .emp-leave .unpaid-leave .leave-numeric {
+  padding: 15%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--bgwhite);
+  background: var(--bgColor2);
+  aspect-ratio: 1/1;
+}
+
+.calendar-progress-bar {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-progress-bar .circular-container-bar-calender {
+  border: 25px solid var(--bgColor);
+  border-radius: 50%;
+  background: var(--bgColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 0px 5px 0px #0f0f0f, -5px 0px 5px 0px #252525;
+}
+
+/* Add the following CSS styles in your CSS file or style block */
+
+/* Date styles for the "green" (present) status */
+.day.green {
+  color: var(--bgthemecolor);
+  box-shadow: 0 0 5px 5px var(--bgthemecolor) inset,
+    0 0 5px 5px var(--bgthemecolor);
+  /* Change the text color to green */
+}
+
+/* Date styles for the "red" (unpaid leave) status */
+.day.red {
+  color: var(--bgchanges);
+  box-shadow: 0 0 5px 5px var(--bgchanges) inset, 0 0 5px 5px var(--bgchanges);
+  /* Change the text color to white */
+}
+
+/* Date styles for the "blue" (paid leave) status */
+.day.blue {
+  color: var(--bgleave);
+  box-shadow: 0 0 5px 5px var(--bgleave) inset, 0 0 5px 5px var(--bgleave);
+  /* Change the text color to white */
+}
+
+/* Date styles for the "orange" (late to work) status */
+.day.yellow {
+  color: var(--bgtodo);
+  box-shadow: 0 0 5px 5px var(--bgtodo) inset, 0 0 5px 5px var(--bgtodo);
+  /* Change the text color to white */
+}
+
+.day.grey {
+  color: rgb(66, 66, 66);
+  box-shadow: 0 0 5px 5px rgb(66, 66, 66) inset, 0 0 5px 5px rgb(66, 66, 66);
+}

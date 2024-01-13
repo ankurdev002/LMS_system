@@ -1,0 +1,58 @@
+.layout-container {
+  height: 100%;
+  width: 80%;
+  background: var(--bgColor2);
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-first-cont {
+  height: 10%;
+  display: flex;
+  width: 100%;
+  padding: 2% 4%;
+  z-index: 1;
+  justify-content: flex-end;
+}
+
+.layout-first-cont h3 {
+  color: var(--bgwhite);
+  font-weight: 500;
+}
+
+.layout-main-container {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.layout-cont-4 {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout-cont-4 .quote {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.layout-cont-4 .quote h3 {
+  display: inline;
+  text-transform: uppercase;
+  color: var(--bgwhite);
+  font-weight: 700;
+  font-size: 150%;
+}
+
+.layout-cont-4 .quote h3 span {
+  color: var(--bgthemecolor);
+}

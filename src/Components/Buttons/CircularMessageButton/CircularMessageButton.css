@@ -1,0 +1,9 @@
+.mail-btn-circle {
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(to right, var(--bgbtn2) 0%, var(--bgColor) 75%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

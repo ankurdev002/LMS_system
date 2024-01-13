@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgColor: -webkit-linear-gradient(120deg, #f5f7fa, #a3badf);
+  --bgGreyLight: #595353;
+  --bgColortrans: rgba(245, 245, 245, 0.582);
+  --bgColor2: -webkit-linear-gradient(120deg, #f5f7fa, #a9bad4);
+  --bgColor3: #e1e8f4;
+  --bgColor4: rgb(198, 204, 214);
+  --bgLogin: #7f4826;
+  --bgbtn: #1d1d1d1e;
+  --bgbtnblack: #1d1d1d;
+  --bgbtn2: #675a5a;
+  --bgshadow: #050505;
+  --bgwhite2: white;
+  --bglog: #343434;
+  --bgwhite: #383838;
+  --bgwhiteopac: #ffffff3f;
+  --bgtrans: transparent;
+  --bgthemecolor: #50d5b7;
+  --bgthemecolor2: #067d68;
+  --bgtextgradient: -webkit-linear-gradient(120deg, #50d5b7, #067d68);
+  --bgline: #484646;
+  --bgtablecolor: -webkit-linear-gradient(120deg, #f5f7fa, #a9bad4);
+  --bgnoticecolor: -webkit-linear-gradient(120deg, #067d68, #50d5b7);
+  --bgEditPopuptbtn: #1a1818;
+  --bgprogress: #508ad5;
+  --bgchanges: #d55050;
+  --bgcompleted: #50d5b7;
+  --bgleave: #5898eb;
+  --bgtodo: #d5d350;
+  --bgloader: #021439;
+}

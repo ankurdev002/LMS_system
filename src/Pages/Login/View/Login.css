@@ -1,0 +1,214 @@
+.login-screen-background {
+  background: var(--bgColor);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-firm {
+  position: absolute;
+  left: 5%;
+  top: 2%;
+  font-size: 300%;
+  color: var(--bgbtnblack);
+  opacity: 0.5;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 25%;
+  border-radius: 25px;
+  transition: 1s ease-in;
+  background: linear-gradient(to right, var(--bgLogin), var(--bgColor));
+}
+.login-container2 {
+  position: absolute;
+  display: flex;
+  /* margin-right: 5%; */
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 25%;
+  border-radius: 25px;
+  transition: 1s ease-in;
+  background: var(--bgtextgradient);
+  box-shadow: 0 0 10px 2px var(--bgthemecolor);
+  /* -webkit-animation: flip-scale-2-ver-right 1s linear both;
+  animation: flip-scale-2-ver-right 1s linear both; */
+}
+
+.login-container3 {
+  position: absolute;
+  display: flex;
+  /* margin-right: 5%; */
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 25%;
+  border-radius: 25px;
+  transition: 1s ease-in;
+  background: var(--bgtextgradient);
+}
+
+.login-form {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  left: 100%;
+  background: var(--bglog);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  -webkit-animation: swing-left-bck 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    reverse both;
+
+  animation: swing-left-bck 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+    both;
+}
+
+.login {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s ease-in;
+}
+
+.login .form {
+  width: 100%;
+  height: 100%;
+  padding: 0 10%;
+}
+
+.login .form form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  height: 10%;
+}
+
+.login .form form .input-container {
+  margin-top: 20%;
+}
+
+.login .form form .input-container input {
+  color: var(--bgthemecolor);
+  padding: 0 4% 1% 4%;
+  padding-left: 0;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--bgwhite);
+}
+
+.login .form form .input-container label {
+  color: var(--bgColor3);
+  font-size: 80%;
+  font-weight: 700;
+}
+.login .form form .input-container p {
+  color: var(--bgthemecolor);
+  font-size: 60%;
+}
+
+.login .form form a {
+  margin-top: 15%;
+  cursor: pointer;
+  color: var(--bgthemecolor2);
+  font-size: 70%;
+  margin-left: 60%;
+  font-weight: 500;
+}
+
+.login-form-btn {
+  height: 250px;
+  width: 250px;
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .form form button {
+  padding: 5% 16%;
+
+  cursor: pointer;
+  display: flex;
+  background: var(--bgtrans);
+  border: 1px solid var(--bgthemecolor);
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: var(--bgthemecolor);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.login .form form button a {
+  margin: 0;
+  font-size: 125%;
+  text-align: center;
+  color: var(--bgthemecolor);
+}
+
+.outline-btn {
+  height: 75%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 5px solid var(--bgwhite);
+}
+::placeholder {
+  color: var(--bgtrans);
+}
+
+@-webkit-keyframes swing-left-bck {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 0;
+  }
+}
+@keyframes swing-left-bck {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    z-index: 2;
+    opacity: 1;
+  }
+  50% {
+    z-index: -1;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 0;
+    z-index: -1;
+  }
+}

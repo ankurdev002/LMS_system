@@ -1,0 +1,502 @@
+.logo-web-sidebar-container {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.CircularLogo {
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(
+    to right,
+    var(--bgGreyLight) 0%,
+    var(--bgColor) 75%
+  );
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  z-index: 4;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--bgColor);
+  box-shadow: 10px 5px 5px 4px var(--bgshadow);
+  transition: 1s ease-in;
+}
+.circular-web-logo {
+  height: 75%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sidebar {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bgColor);
+  overflow: hidden;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15%;
+  width: 100%;
+  z-index: 5;
+  height: 55%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sidebar nav ul {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sidebar nav ul li {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar nav ul li a {
+  display: flex;
+  text-align: left;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.sidebar nav ul li a span:nth-child(1) {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar nav ul li a span:nth-child(2) {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.active {
+  background: linear-gradient(
+    to right,
+    var(--bgthemecolor) 50%,
+    var(--bgtrans) 50%
+  );
+  color: white !important;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-size: 200% 100%;
+  background-position: left;
+  animation: backactive 0.5s ease-in;
+}
+
+@keyframes backactive {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+.logout-container {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-container a {
+  width: 45%;
+  background: var(--bgColor3);
+  cursor: pointer;
+  border-radius: 10px;
+  height: 90%;
+  display: flex;
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  align-items: center;
+}
+
+.logout-container a button {
+  background: var(--bgtrans);
+  border: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-container a:hover {
+  background: var(--bgColor4);
+}
+
+.logout-container a button svg {
+  height: 20px;
+}
+
+.punch-container {
+  height: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.punch-container .punch-btns {
+  width: 30%;
+  z-index: 4;
+  cursor: pointer;
+  text-align: center;
+}
+
+.punch-container span {
+  color: var(--bgwhite);
+  font-size: 90%;
+}
+
+.break-in,
+.break-out,
+.punch-in,
+.punch-out {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.break-in h6,
+.break-out h6,
+.punch-in h6,
+.punch-out h6 {
+  font-weight: 300;
+}
+
+.break-in svg,
+.break-out svg,
+.punch-in svg,
+.punch-out svg {
+  height: 50px;
+  width: 50px;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4%;
+  height: 200px; /* Adjust the height as needed */
+}
+
+.loader-container svg {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  transform: rotate(-45deg) !important;
+  z-index: 10;
+  animation: brezze 2.1s ease infinite;
+}
+
+@keyframes brezze {
+  0% {
+    color: white;
+  }
+  25% {
+    color: #a1d4e6;
+  }
+  50% {
+    scale: 1.1;
+    color: #a1d4e6;
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px; /* Adjust the size of the loader */
+  height: 80px; /* Adjust the size of the loader */
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.square {
+  position: absolute;
+  width: 20px; /* Adjust the size of the square */
+  height: 20px; /* Adjust the size of the square */
+  background: #a1d4e6; /* Adjust the color of the square */
+  animation: square-move 2s infinite linear;
+  z-index: 1;
+}
+
+@keyframes square-move {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 60px;
+    top: 0;
+  }
+  50% {
+    left: 60px;
+    top: 60px;
+  }
+  75% {
+    left: 0;
+    top: 60px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+.loading {
+  position: relative;
+  z-index: 4;
+  overflow: hidden;
+  height: 75px;
+  width: 75px;
+  background: #021439;
+  color: white;
+  border: 1px solid transparent;
+  /* border: 1px solid #021439; */
+  background-clip: padding-box;
+  box-shadow: 0 0 0 4px #021439;
+}
+/* loader */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    var(--bgthemecolor),
+    var(--bgthemecolor),
+    var(--bgthemecolor),
+    var(--bgthemecolor),
+    var(--bgthemecolor)
+  ); /* semi-transparent white background */
+  z-index: 9999; /* ensure the loader is displayed on top of other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4%;
+  transition: opacity 1s;
+}
+.loaders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.loaders svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+
+  transform: rotate(-45deg);
+
+  font-size: 150px;
+  animation: brezze 2.1s ease infinite;
+}
+
+#loader .loading {
+  position: relative;
+  z-index: 4;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+  background: #021439;
+  background-clip: border-box;
+  color: white;
+  border: 2px solid transparent;
+  border: 1px solid #021439;
+  background-clip: padding-box;
+  box-shadow: 0 0 0 4px #021439;
+}
+
+.loading span {
+  position: absolute;
+
+  overflow: hidden;
+}
+
+.loading span:nth-child(1)::before {
+  content: "";
+  position: relative;
+  width: 5px;
+  height: 5px;
+  z-index: 1000;
+  background: var(--bgthemecolor);
+  border-radius: 50%;
+  background: var(--bgthemecolor);
+  box-shadow: 0 0 20px var(--bgthemecolor), 0 0 40px var(--bgthemecolor),
+    0 0 60px var(--bgthemecolor), 0 0 80px var(--bgthemecolor),
+    0 0 100px var(--bgthemecolor), 0 0 0 5px rgba(0, 255, 157, 0.5);
+}
+
+.loading span:nth-child(2)::before {
+  content: "";
+  position: relative;
+  width: 5px;
+  height: 5px;
+  z-index: 1000;
+  background: var(--bgthemecolor);
+  border-radius: 50%;
+  background: var(--bgthemecolor);
+  box-shadow: 0 0 20px var(--bgthemecolor), 0 0 40px var(--bgthemecolor),
+    0 0 60px var(--bgthemecolor), 0 0 80px var(--bgthemecolor),
+    0 0 100px var(--bgthemecolor), 0 0 0 5px rgba(0, 162, 255, 0.5);
+}
+
+.loading span:nth-child(3)::before {
+  content: "";
+  position: relative;
+  width: 5px;
+  height: 5px;
+  z-index: 1000;
+  background: var(--bgthemecolor);
+  border-radius: 50%;
+  background: var(--bgthemecolor);
+  box-shadow: 0 0 20px var(--bgthemecolor), 0 0 40px var(--bgthemecolor),
+    0 0 60px var(--bgthemecolor), 0 0 80px var(--bgthemecolor),
+    0 0 100px var(--bgthemecolor), 0 0 0 5px rgba(0, 162, 255, 0.5);
+}
+
+.loading span:nth-child(4)::before {
+  content: "";
+  position: relative;
+  width: 5px;
+  height: 5px;
+
+  z-index: 1000;
+  background: var(--bgthemecolor);
+  border-radius: 50%;
+  background: var(--bgthemecolor);
+  box-shadow: 0 0 20px var(--bgthemecolor), 0 0 40px var(--bgthemecolor),
+    0 0 60px var(--bgthemecolor), 0 0 80px var(--bgthemecolor),
+    0 0 100px var(--bgthemecolor), 0 0 0 5px rgba(0, 162, 255, 0.5);
+}
+
+.loading span:nth-child(1) {
+  display: flex;
+
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a1d4e6);
+  animation: animate1 2s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.loading span:nth-child(2) {
+  top: -100%;
+  display: flex;
+  align-items: flex-end;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #a1d4e6);
+  animation: animate2 2s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.loading span:nth-child(3) {
+  display: flex;
+  justify-content: flex-start;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #a1d4e6);
+  animation: animate3 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.loading span:nth-child(4) {
+  display: flex;
+  align-items: flex-start;
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #a1d4e6);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1.5s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}

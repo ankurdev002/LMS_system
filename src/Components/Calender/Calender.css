@@ -1,0 +1,97 @@
+/* Calendar.css */
+
+.calendar {
+    position: absolute;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    background-color: transparent;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .month-select,
+  .year-select {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 5px;
+  }
+  
+  .close-btn {
+    background-color: transparent;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .calendar-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .weekdays {
+    display: flex;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .weekdays > div {
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    color: var(--bgthemecolor);
+    font-weight: 400;
+  }
+  
+  .days {
+    margin-top: 10px;
+  }
+  
+  .week {
+    display: flex;
+  }
+  
+  .day {
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .current-month {
+    color: black;
+  }
+  
+  .other-month {
+    color: #ccc;
+  
+  }
+  
+  .selected {
+    background-color: #eee;
+  }
+  
+
+  .start-date-main-div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }

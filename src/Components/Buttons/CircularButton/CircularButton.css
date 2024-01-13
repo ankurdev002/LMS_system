@@ -1,0 +1,84 @@
+.circular-btn-container {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  height: 100%;
+  transition: all 1.5s ease-in;
+}
+
+.main-screen-loader {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-screen-loader:hover > .CircularButton {
+  animation-play-state: paused;
+}
+
+.main-screen-loader:hover > .loader-container > .rotate-off {
+  animation-play-state: paused;
+}
+
+.CircularButton {
+  cursor: pointer;
+  height: 140px;
+  width: 140px;
+  background: var(--bgColor2);
+  flex-shrink: 0;
+  display: flex;
+  z-index: 4;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--bgColor);
+  box-shadow: 0 0 10px 2px var(--bgthemecolor);
+  background: #021439;
+  transition: 1s ease-in;
+  animation: rotating 8s linear infinite;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotatingrev {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.rotate-off {
+  position: absolute !important;
+  cursor: pointer;
+  box-shadow: 0 0 10px 2px var(--bgthemecolor);
+  z-index: 6 !important;
+  animation: rotatingrev 8s linear infinite;
+}
+
+.btn-logo {
+  height: 75%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.manual-loading {
+  height: 130px !important;
+  width: 130px !important;
+}
